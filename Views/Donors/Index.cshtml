@@ -1,0 +1,31 @@
+﻿@model IEnumerable<DonorManagementAPI.Models.Donor>
+
+<h2>Donors List</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Donor Name</th>
+            <th>DOB</th>
+            <th>Email</th>
+            <th>BloodType</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var donor in Model)
+        {
+            <tr>
+                <td>@donor.DonorName</td>
+                <td>@donor.DOB.ToShortDateString()</td>
+                <td>@donor.Email</td>
+                <td>@donor.BloodType</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@donor.DonorID">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@donor.DonorID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create">Add New Donor</a>

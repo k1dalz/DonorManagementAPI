@@ -1,0 +1,127 @@
+﻿/* General Styling */
+a {
+    color: #b71c1c; /* Dark red for links */
+    text-decoration: none; /* Remove default underline */
+}
+
+    a:hover {
+        color: #7f0000; /* Darker red on hover */
+    }
+
+    a.navbar-brand {
+        white-space: nowrap; /* Avoid breaking branding unnecessarily */
+        text-align: center;
+        word-break: keep-all; /* Prevent breaking important words */
+        font-weight: bold; /* Emphasize branding */
+        color: #b71c1c; /* Deep red for branding */
+    }
+
+header {
+    display: flex; /* Flexbox for alignment */
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center; /* Vertically center items */
+    background-color: #ffcdd2; /* Light pinkish-red background for header */
+    padding: 1rem; /* Add spacing around the content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+a.navbar-brand {
+    white-space: nowrap; /* Avoid breaking branding unnecessarily */
+    text-align: left; /* Align text to the left */
+    word-break: keep-all; /* Prevent breaking important words */
+    font-weight: bold; /* Emphasize branding */
+    font-size: 1.5rem; /* Increase font size */
+    color: #b71c1c; /* Deep red color for branding */
+    text-decoration: none; /* Remove underline */
+}
+
+    a.navbar-brand:hover {
+        color: #7f0000; /* Darker red on hover */
+    }
+
+/* Optional: Style for Header Navigation (if included) */
+header nav {
+    margin-left: 2rem; /* Add spacing between logo and navigation */
+}
+
+    header nav a {
+        margin-right: 1rem; /* Space out navigation links */
+        color: #b71c1c;
+        text-decoration: none;
+    }
+
+        header nav a:hover {
+            color: #7f0000;
+        }
+
+/* Background and General Theme */
+body {
+    background-color: #fbe9e7; /* Light pinkish-red for a subtle background */
+    color: #4a4a4a; /* Neutral text color for readability */
+}
+
+/* Button Styles */
+.btn-primary {
+    color: #fff;
+    background-color: #b71c1c; /* Blood-red buttons */
+    border-color: #7f0000;
+}
+
+    .btn-primary:hover {
+        background-color: #7f0000; /* Darker red on hover */
+        border-color: #5a0000;
+    }
+
+/* Navigation Pills */
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #b71c1c;
+    border-color: #7f0000;
+}
+
+.nav-pills .nav-link {
+    color: #b71c1c;
+}
+
+    .nav-pills .nav-link:hover {
+        color: #7f0000;
+    }
+
+/* Borders and Box Shadows */
+.border-top,
+.border-bottom {
+    border-color: #ffcdd2; /* Soft pink for subtle borders */
+}
+
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgba(183, 28, 28, 0.2); /* Red-tinted shadow */
+}
+
+/* Footer Styles */
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffcdd2; /* Light pink background */
+    color: #b71c1c;
+    line-height: 60px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Policy Button */
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+    background-color: #b71c1c; /* Blood-red button */
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+    button.accept-policy:hover {
+        background-color: #7f0000; /* Darker red on hover */
+        color: #fff;
+    }
